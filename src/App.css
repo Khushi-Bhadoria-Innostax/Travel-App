@@ -71,5 +71,6 @@ input{
   font-size: 100%;
 }
 body{
-  background: var(--bodyColor);
+  background: var(--whiteColorDeam);
+  
 }

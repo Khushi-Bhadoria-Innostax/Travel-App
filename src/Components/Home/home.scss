@@ -71,6 +71,7 @@
         gap: 1rem;
         opacity: 0.7;
 
+
         label{
             display:block;
             color:var(--textColor);
@@ -117,6 +118,44 @@
            .input[type=range]{
             background: blue;
            }
+        }
+        .searchOptions{
+            position:absolute;
+            background:var(--textColor);
+            width: max-content;
+            bottom: -0.7rem;
+            column-gap: 0.8rem;
+            padding: 5px 1rem;
+            border-radius: 3rem;
+            left: 50%;
+            transform:translate(-50%);
+            justify-content: center;
+            cursor: pointer;
+
+            &:hover{
+                background-color: var(--SecondaryColor);
+            } 
+            .icon{
+                font-size: 18px;
+            }
+            span{
+                font-size:13px;
+                text-transform: uppercase;
+            }
+
+        }
+    }
+    .homeFooterIcons{
+        width: 100%;
+        justify-content:space-between;
+
+        .icon{
+            font-size:20px;
+            margin: 2px;
+            font-weight:600;
+            &:hover{
+                color:var(--SecondaryColor);
+            }
         }
     }
 

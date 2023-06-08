@@ -3,6 +3,11 @@ import './home.css';
 import video from '../../Assets/video2.mp4';
 import {GrLocation} from 'react-icons/gr';
 import {FaFilter} from 'react-icons/fa';
+import {BsFacebook} from 'react-icons/bs';
+import {FaInstagramSquare} from 'react-icons/fa';
+import {FaTripadvisor} from 'react-icons/fa';
+import {TbApps} from 'react-icons/tb';
+import {FiList} from 'react-icons/fi';
 
 const Home=() =>{
     return(
@@ -45,11 +50,24 @@ const Home=() =>{
                     </div>
                     <div className="searchOptions flex">
                         <FaFilter className="icon" />
+                        <span>MORE Filters</span>
                     </div>
+                </div>
+                <div className="homeFooterIcons flex">
+                    <div className="rightIcons">
+                        <BsFacebook className="icon" />
+                        <FaInstagramSquare className="icon" />
+                        <FaTripadvisor className="icon" />
+                    </div>
+                    <div className='leftIcons'>
+                        <FiList className="icon" />
+                        <TbApps className="icon" />
+                    </div>
+
                 </div>
             </div>
         </section>
     )
 }
 
-export default Home
+export default Home;
