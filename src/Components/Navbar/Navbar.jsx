@@ -3,6 +3,7 @@ import './Navbar.css';
 import {MdOutlineTravelExplore} from "react-icons/md";
 import {AiFillCloseCircle} from "react-icons/ai";
 import {TbGridDots} from "react-icons/tb";
+import {useNavigate} from "react-router-dom";
 
 
 const Navbar=() =>{
@@ -13,7 +14,8 @@ const Navbar=() =>{
     const hideNav=()=>{
         setActive(' navBar');
     }
-    return(
+    const navigateLogin= useNavigate();
+return(
         <section className='navBarSection'>
             <header className='header flex'>
                 <div className='logoDiv'>
@@ -52,8 +54,8 @@ const Navbar=() =>{
                             <a href="" className="navLink">Contacts</a>
                         </li>
 
-                        <button className="btn">
-                            <a href='a'>BOOK NOW</a>
+                        <button className="btn" onClick={()=>navigateLogin("/login")}>
+                            <a href='/login'>BOOK NOW</a>
                         </button>
                     </ul>
 
@@ -69,4 +71,4 @@ const Navbar=() =>{
     )
 }
 
-export default Navbar
+export default Navbar;
